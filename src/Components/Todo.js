@@ -49,6 +49,11 @@ const Todo = () => {
     const newarr = data.filter((val) => val.id !== item.id);
     console.log(newarr, "new");
     setData(newarr);
+
+    toast.success(`Deleted Successfully`, {
+      position: toast.POSITION.TOP_RIGHT,
+      theme: "dark",
+    });
   };
 
   const getUserData = async (item) => {

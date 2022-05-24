@@ -3,7 +3,9 @@ let count = 0;
 const TodoList = ({ data, onClick, handleRemove }) => {
   const onClickfunction = () => {
     count += 1;
+    console.log(count, "before timeout");
     setTimeout(() => {
+      console.log(count, "timeout");
       if (count === 1) {
         onClick(data.userId);
       } else if (count === 2) {
