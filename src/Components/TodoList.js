@@ -18,7 +18,7 @@ const TodoList = ({ data, onClick, handleRemove }) => {
   return (
     <div>
       <ul class="list-group" key={data.id} onClick={onClickfunction}>
-        <li class="list-group-item">{data.title}</li>
+        <li class="list-group-item list-group-item-action">{data.title}</li>
       </ul>
     </div>
   );
